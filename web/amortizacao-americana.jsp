@@ -35,9 +35,53 @@
             <% double jurosEntrada = jurosInput/100;%>
             
             
-            <%
+            <table border="1">
+                <tr>
+                    <th>#</th>
+                    <th>Parcelas</th>
+                    <th>Amortizações</th>
+                    <th>Juros</th>
+                    <th>Saldo devedor</th>
+                </tr>
+            <% for (x=1; x<=tempo; x++){ %>
+            <% saldoPagar = f; %>
+            <% jurosSaida =jurosEntrada = saldoPagar; %>
+            <% parcela = jurosSaida; %>
             
-        
-        <%}catch(Exception){%>
-    
+            <% if(x==tempo){%>
+            <% amortizacao = saldoPagar;%>
+            <% saldoPagar = 0;%>
+            <% parcela = amortizacao + jurosSaida; %>
+            <% } %>
+            
+            <tr>
+                <td><%= x %></td>
+                <td><%= parcela %></td>
+                <td><%= amortizacao %></td>
+                <td><$= jurosSaida %></td>
+                <td><%= saldoPagar%></td>
+            </tr>
+            
+            <%totalAmortizacao = totalAmortizacao + amortizacao; %>
+            <%totalJurosSaida+= jurosSaida; %>
+            <%totalParcela += parcela; %>
+            
+            <%}%>
+            
+            <tr>
+                <td> >> </td>
+                <td><%= totalParcela %></td>
+                <td><%= totalAmortizacao%></td>
+                <td><%= totalJurosSaida%></td>
+                <td><xenter><b> <<-TOTAL </b></center></td>
+            </tr>
+            </table>
+                
+        <% }catch(Exception e){%>
+        <h2 style="color:red"> Número Inválido</h2>
+        <% }%>
+        <% } %>
+    </form>
+</body>
+ 
 </html>
