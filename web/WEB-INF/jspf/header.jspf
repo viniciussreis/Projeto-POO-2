@@ -1,3 +1,15 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
+
+<style>
+    .header{
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+    }
+    
+</style>
+
+<div class="header">
+    <h1>Header</h1>
+</div>
