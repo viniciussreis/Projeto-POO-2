@@ -15,10 +15,12 @@
         <h1>Amortização Americana</h1>
         <hr/>
         
+        <form>
             Valor do Financiamento: <input type="number" name="financiamento">
             Taxa de Juros (em %): <input type="number" name="juros">
             Tempo: <input type="number" name="tempo">
-            <input type="submit" name =" calcular" value="CALCULAR">
+            <input type="submit" name ="calcular" value="CALCULAR">
+        </form>
             <% if(request.getParameter("calcular")!=null){%>
             <% try{ %>
             <% int x=0; %>
@@ -45,7 +47,7 @@
                 </tr>
             <% for (x=1; x<=tempo; x++){ %>
             <% saldoPagar = f; %>
-            <% jurosSaida =jurosEntrada = saldoPagar; %>
+            <% jurosSaida = jurosEntrada = saldoPagar; %>
             <% parcela = jurosSaida; %>
             
             <% if(x==tempo){%>
@@ -58,7 +60,7 @@
                 <td><%= x %></td>
                 <td><%= parcela %></td>
                 <td><%= amortizacao %></td>
-                <td><$= jurosSaida %></td>
+                <td><%= jurosSaida %></td>
                 <td><%= saldoPagar%></td>
             </tr>
             
@@ -69,11 +71,11 @@
             <%}%>
             
             <tr>
-                <td> >> </td>
+                <td><%= x %> </td>
                 <td><%= totalParcela %></td>
                 <td><%= totalAmortizacao%></td>
                 <td><%= totalJurosSaida%></td>
-                <td><xenter><b> <<-TOTAL </b></center></td>
+                <td><center><b> <<-TOTAL </b></center></td>
             </tr>
             </table>
                 
