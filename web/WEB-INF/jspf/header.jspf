@@ -10,6 +10,8 @@
     
 </style>
 
-<div class="header">
-    <h1>Header</h1>
-</div>
+<header>
+    <div class="header">
+        <h1>POO</h1>
+    </div>
+</header>

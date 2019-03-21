@@ -9,6 +9,11 @@
 
 <style>
     
+    html, body{
+        height: 90%;
+        width: 100%;
+    }
+    
     *  {
     margin:0;
     padding:0;
@@ -22,12 +27,13 @@
         <title>Home</title>
     </head>
     <body>
-        
-        <%@include file="WEB-INF/jspf/header.jspf"%>
-        
-        <div style="min-height: 100%; background-color: azure; width: 100%;">
-            teste   
-        </div>
-        <%@include file="WEB-INF/jspf/footer.jspf"%>
+            <%@include file="WEB-INF/jspf/header.jspf"%>
+            <%@include file="WEB-INF/jspf/menu.jspf"%>
+   
+            <div style="width: 100%; min-height: 100%; background-color: azure">
+                   teste
+            </div>
+            
+            <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

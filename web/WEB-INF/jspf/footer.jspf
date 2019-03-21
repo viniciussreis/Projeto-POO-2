@@ -15,7 +15,6 @@
 
 <footer>
     <div class="footer">
-            <img src="github_icon.png">
+        <img src="github_icon.png" alt="" width="35px" height="35px"/>
     </div>
-    
 </footer>
