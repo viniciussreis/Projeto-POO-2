@@ -25,6 +25,15 @@
     padding:0;
     }
     
+    .tabelaForm{
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    
 </style>
    
 <html>
@@ -37,7 +46,20 @@
             <%@include file="WEB-INF/jspf/menu.jspf"%>
    
             <div class="content">
-                   Teste
+                <table border='1' class='tabelaForm' align='center'>
+                    <tr>
+                        <td width='15%'>
+                            <b>Teste</b>
+                            <p>Teste texto grande</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Teste</b>
+                            <p>Teste texto grande</p>
+                        </td>
+                    </tr>
+                </table>       
             </div>
             
             <%@include file="WEB-INF/jspf/footer.jspf"%>
