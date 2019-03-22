@@ -14,6 +14,12 @@
         width: 100%;
     }
     
+    .content{
+        width: 100%; 
+        min-height: 100%; 
+        background-color: azure;
+    }
+    
     *  {
     margin:0;
     padding:0;
@@ -30,8 +36,8 @@
             <%@include file="WEB-INF/jspf/header.jspf"%>
             <%@include file="WEB-INF/jspf/menu.jspf"%>
    
-            <div style="width: 100%; min-height: 100%; background-color: azure">
-                   teste
+            <div class="content">
+                   Teste
             </div>
             
             <%@include file="WEB-INF/jspf/footer.jspf"%>

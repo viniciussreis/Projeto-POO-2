@@ -71,7 +71,7 @@
             <%}%>
             
             <tr>
-                <td><%= x %> </td>
+                <td><%= x %></td>
                 <td><%= totalParcela %></td>
                 <td><%= totalAmortizacao%></td>
                 <td><%= totalJurosSaida%></td>
