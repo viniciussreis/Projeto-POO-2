@@ -1,0 +1,38 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<style>
+    
+    .geral{
+        background-color: #f1f1f1;
+        width: 100%;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+    }
+    
+    .itens{
+       position: relative;
+       width: 200px;
+       height: 30px;
+       text-align: center;
+       background-color: #f1f1f1;
+       vertical-align: middle;
+       display: table-cell;
+       border-right: 1px solid #000;
+       color: black;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 2;
+        text-decoration:none;
+    }
+    
+</style>
+
+<div class="geral">
+    <a class="container" href="home.jsp"><div class="itens">Home</div></a>
+    <a class="container" href="amortizacao-americana.jsp"><div class="itens">Amortização Americana</div></a>
+    <a class="container" href="amortizacao-constante.jsp"><div class="itens">Amortização Constante</div></a>
+    <a class="container" href="tabela-price.jsp"><div class="itens">Tabela Price</div></a>
+</div>

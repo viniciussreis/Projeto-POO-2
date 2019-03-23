@@ -9,13 +9,13 @@
         padding: 10px 0px 5px;
         background-color: #f1f1f1;
         text-align: center;
+        border-top: 1px solid #000;
     } 
     
 </style>
 
 <footer>
     <div class="footer">
-            <img src="github_icon.png">
+        <a href="https://github.com/viniciussreis/Projeto-POO-2"><img src="imagens/github_icon.png" width="25px" height="25px"/></a>
     </div>
-    
 </footer>
