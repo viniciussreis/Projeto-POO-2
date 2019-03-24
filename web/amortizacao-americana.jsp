@@ -131,7 +131,7 @@
                     <td></td>
                     <td><%= valorTotal%></td>
                     <td><%= jurosTotal%></td>          
-                    <td><%= (valorTotal + jurosMensal) + jurosTotal%></td>
+                    <td><%= valorTotal + jurosTotal%></td>
                 </tr>
             </tfoot>
         </table>
