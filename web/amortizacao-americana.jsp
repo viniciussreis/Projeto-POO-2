@@ -36,7 +36,7 @@
     .tabela{
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
@@ -97,34 +97,42 @@
             <tbody>
                 <% do { %>
                 <% if (mes == 0) {%>
-                <tr><th scope="row"><%= mes%></th>
+                <tr>
+                    <th scope="row"><%= mes%></th>
                     <td><%= valorTotal%></td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td></tr>
+                    <td>-</td>
+                </tr>
                     <% } else if (mes < qtdeParc) {%>
-                <tr><th scope="row"><%= mes%></th>
+                <tr>
+                    <th scope="row"><%= mes%></th>
                     <td><%= valorTotal%></td>
                     <td>-</td>
                     <td><%= jurosMensal%></td>
-                    <td> <%= jurosMensal%> </td></tr>
+                    <td> <%= jurosMensal%> </td>
+                </tr>
                     <%}
                             mes++;
                             jurosTotal += jurosMensal;
                         } while (mes < qtdeParc);
-                        jurosTotal += jurosMensal;%>
-                <tr><th scope="row"><%= mes%></th>
+                    %>
+                <tr>
+                    <th scope="row"><%= mes%></th>
                     <td>-</td>
                     <td><%= valorTotal%></td>
                     <td><%= jurosMensal%></td>
-                    <td><%= valorTotal + jurosMensal%></td></tr>
+                    <td><%= valorTotal + jurosMensal%></td>
+                </tr>
             </tbody> 
             <tfoot>
-                <tr><th scope="row">TOTAL</th>
+                <tr>
+                    <th scope="row">TOTAL</th>
                     <td></td>
                     <td><%= valorTotal%></td>
-                    <td><%= jurosTotal%></td>
-                    <td><%= valorTotal + jurosTotal%></td></tr>
+                    <td><%= jurosTotal%></td>          
+                    <td><%= (valorTotal + jurosMensal) + jurosTotal%></td>
+                </tr>
             </tfoot>
         </table>
         <% } catch (Exception e) {
