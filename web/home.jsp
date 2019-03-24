@@ -45,22 +45,17 @@
             <%@include file="WEB-INF/jspf/header.jspf"%>
             <%@include file="WEB-INF/jspf/menu.jspf"%>
    
-            <div class="content">
-                <table border='1' class='tabelaForm' align='center'>
-                    <tr>
-                        <td width='15%'>
-                            <b>Teste</b>
-                            <p>Teste texto grande</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>Teste</b>
-                            <p>Teste texto grande</p>
-                        </td>
-                    </tr>
-                </table>       
-            </div>
+            <ul>
+                <li>
+                            <b>Beatriz Lourenço</b>
+                            <p>Estudante de análise e desenvolvimento de sistemas.</p>
+                </li>
+                <li>
+                            <b>Vinicius Reis</b>
+                            <p>Estudante de análise e desenvolvimento de sistemas.</p>
+                </li>
+            </ul>             
+            
             
             <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
