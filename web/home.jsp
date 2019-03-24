@@ -44,15 +44,24 @@
     <body>
             <%@include file="WEB-INF/jspf/header.jspf"%>
             <%@include file="WEB-INF/jspf/menu.jspf"%>
-   
+            
+            <br/>
             <ul>
                 <li>
-                            <b>Beatriz Lourenço</b>
-                            <p>Estudante de análise e desenvolvimento de sistemas.</p>
+                    <b>Beatriz Lourenço</b>
+                    <p>Estudante de análise e desenvolvimento de sistemas.<br/>
+                        <b>Responsavel por:</b> Amortização Americana e Amortização constante.
+                    </p>
                 </li>
+            </ul>
+            <br/>
+            <br/>
+            <ul>
                 <li>
-                            <b>Vinicius Reis</b>
-                            <p>Estudante de análise e desenvolvimento de sistemas.</p>
+                    <b>Vinicius Reis</b>
+                    <p>Estudante de análise e desenvolvimento de sistemas.<br/>
+                        <b>Responsavel por:</b> Header/Footer, Home e Tabela Price.
+                    </p>
                 </li>
             </ul>             
             
